@@ -9,4 +9,6 @@
     <string name="words">words:</string>
     <string name="preferences">loginPrefernces\n</string>
     <string name="submit">Submit</string>
+    <string name="shop_name">Shop Name:-</string>
+    <string name="cash_calculator">Cash Calculator</string>
 </resources>

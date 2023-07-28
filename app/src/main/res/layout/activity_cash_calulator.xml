@@ -9,19 +9,36 @@
     android:layout_height="match_parent"
     tools:context=".cash_calculator.CashCalulator">
 
-    <TextView
-        android:id="@+id/name"
+    <LinearLayout
+        android:id="@+id/header"
         android:layout_width="match_parent"
-        android:layout_height="40dp"
+        android:layout_height="45dp"
+        android:weightSum="1"
+        android:gravity="center"
         android:background="@color/plusBackground"
         app:layout_constraintEnd_toEndOf="parent"
-        android:textSize="30sp"
-        android:textStyle="bold"
-        android:textColor="@color/white"
-        android:gravity="center"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:ignore="InvalidId" />
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="0.9"
+            android:background="@color/plusBackground"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent" />
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_weight="0.1"
+            android:layout_height="40dp"
+            android:src="@drawable/baseline_info_24"
+            android:id="@+id/logout"/>
+    </LinearLayout>
+
 
     <LinearLayout
         android:id="@+id/linearLayout3"
@@ -33,7 +50,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
 
-        app:layout_constraintTop_toBottomOf="@+id/name"
+        app:layout_constraintTop_toBottomOf="@+id/header"
         tools:ignore="TextSizeCheck">
 
         <LinearLayout

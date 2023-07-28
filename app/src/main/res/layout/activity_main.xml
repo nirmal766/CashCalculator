@@ -11,7 +11,7 @@
     tools:context=".MainActivity">
 <TextView
     android:layout_width="match_parent"
-    android:text="Cash Calculator"
+    android:text="@string/cash_calculator"
     android:textColor="#FF1714"
     android:textStyle="bold"
     android:textSize="40sp"
@@ -30,17 +30,18 @@
             android:id="@+id/textInputLayout"
             android:layout_width="match_parent"
             android:layout_height="60dp"
-            android:background="#E8DADA"
+            android:background="#EFF0F1"
             app:counterOverflowTextAppearance="@style/TextAppearance.AppCompat.Body1"
-            app:errorIconDrawable="@color/material_dynamic_primary50"
+            android:textColorHint="#757474"
             app:hintTextColor="#FF5722">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/Shop_name"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:hint="Shop Name:-"
+                android:hint="@string/shop_name"
                 android:inputType="textPersonName"
+                android:textColorHint="#232323"
                 android:maxLength="20"
                 android:textColor="#000000"
                 tools:ignore="DuplicateSpeakableTextCheck" />

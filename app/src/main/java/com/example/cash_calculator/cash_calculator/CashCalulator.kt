@@ -15,6 +15,7 @@ import android.widget.EditText
 import android.widget.ImageView
 import android.widget.TextView
 import android.widget.Toast
+import com.example.cash_calculator.MainActivity
 import com.example.cash_calculator.R
 import com.google.android.material.textfield.TextInputEditText
 import java.util.Locale
@@ -54,6 +55,7 @@ private  var tts: TextToSpeech?=null
 class CashCalulator : AppCompatActivity(), TextToSpeech.OnInitListener {
   var tittle: String?="Cash Calculator"
     lateinit var sharedPreferences: SharedPreferences
+    @SuppressLint("MissingInflatedId")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         sharedPreferences=getSharedPreferences(getString(R.string.preferences),Context.MODE_PRIVATE)
@@ -63,6 +65,23 @@ class CashCalulator : AppCompatActivity(), TextToSpeech.OnInitListener {
         tittle=sharedPreferences.getString("Tittle","Cash")
         val tittleHeader=findViewById<TextView>(R.id.name)
           tittleHeader.text=tittle
+
+
+
+        val logout=findViewById<ImageView>(R.id.logout)
+        logout.setOnClickListener {
+            val intent=Intent(this,MainActivity::class.java)
+            startActivity(intent)
+
+        }
+
+
+
+
+
+
+
+
         ed2000 = findViewById(R.id.Ed2000)
         ed500 = findViewById(R.id.Ed500)
         ed200 = findViewById(R.id.Ed200)
