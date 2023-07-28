@@ -1,0 +1,61 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.Cash_Calculator" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+    </style>
+
+    <style name="Theme.Cash_Calculator" parent="Base.Theme.Cash_Calculator" />
+
+
+    <style name="for_equal">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_weight">0.5</item>
+        <item name="android:textSize">19sp</item>
+        <item name="android:text">@string/equal</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+    <style name="for_x">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_weight">0.5</item>
+        <item name="android:textSize">19sp</item>
+        <item name="android:text">@string/x</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+    <style name="for_inputField">
+        <item name="android:layout_height">48dp</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+        <item name="android:gravity">center</item>
+        <item name="android:hint">000</item>
+        <item name="android:inputType">number</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+    <style name="for_result">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_weight">1.5</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">19sp</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:text">0/-</item>
+    </style>
+
+    <style name="for_calBtn">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">19sp</item>
+        <item name="android:layout_margin">2dp</item>
+        <item name="backgroundTint">@color/forBtn</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <string name="equal">=</string>
+    <string name="x">x</string>
+</resources>
